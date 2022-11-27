@@ -1,0 +1,41 @@
+
+
+.loding{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #b5ca66;
+  font-size: 2rem;
+  color: #343434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  width: 60%;
+  margin: 0 auto;
+  .movies{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    background-color: #2e6423;
+    transform: rotate(3deg);
+    box-shadow: 0  0 10px 3px #343434;
+  }
+  .movies:nth-child(odd){
+    margin-right: 10rem;
+  }
+}
+
