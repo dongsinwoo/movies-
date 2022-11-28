@@ -25,7 +25,8 @@ function Ditail(){
  
       <Link to={"/"} className="back"><h3>Back</h3></Link>
 
-      {loding ? <div className="loding">Loding...</div> : <div key={movie.id} className="inner">
+      {loding ? <div className="loding active">loding...</div>: <div className="loding ">loding...</div>}
+      <div key={movie.id} className="inner">
           <h1>{movie.title}</h1>
           <img src={`${movie.medium_cover_image}`}/>
           <ul>
@@ -33,7 +34,7 @@ function Ditail(){
           </ul>
           <p>{movie.description_full}</p>
           <a href="movie.url">{movie.url}</a>
-        </div>}
+        </div>
     </div>
 
   )

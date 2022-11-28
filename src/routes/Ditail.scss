@@ -14,7 +14,7 @@ ul,li{
 
 .loding{
   position: absolute;
-  top: 0;
+  top: -100vh;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -25,12 +25,16 @@ ul,li{
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  z-index: 999;
 }
+.loding.active{
+  top: 0
+}
+
 
 .box1{
   margin: 0 auto;
   width: 40%;
-  background-color: #2e6423;
   box-shadow: 0  0 10px 3px #343434;
   .inner{
     display: flex;

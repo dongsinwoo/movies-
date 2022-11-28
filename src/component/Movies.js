@@ -5,10 +5,10 @@ function Movies ({title, coverImg, id}){
 
   return(
     <div className="movie">
-        <Link to={`/movie/${id}`} className="title"><h1>{title}</h1></Link>
         <Link to={`/movie/${id}`}>
           <img src={`${coverImg}`}/>
         </Link>
+        <Link to={`/movie/${id}`} className="title"><h1>{title}</h1></Link>
     </div>
   )
 }

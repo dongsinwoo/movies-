@@ -2,7 +2,7 @@
 
 .loding{
   position: absolute;
-  top: 0;
+  top: -100vh;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -13,29 +13,35 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
+  z-index: 999;
 }
-
-
+.loding.active{
+  top: 0
+}
 
 .box{
+  padding: 0 32px;
+}
+
+.haed{
+  color: #fff;
+}
+.documentary{
+  margin-top: 3.25rem;
+}
+
+.movies-contant{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 100px;
-  width: 60%;
+  justify-content: start;
+  width: 100%;
   margin: 0 auto;
   .movies{
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    background-color: #2e6423;
-    transform: rotate(3deg);
     box-shadow: 0  0 10px 3px #343434;
-  }
-  .movies:nth-child(odd){
-    margin-right: 10rem;
+    margin-right: 1rem;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    margin-bottom: 100px;
   }
 }
+
 
